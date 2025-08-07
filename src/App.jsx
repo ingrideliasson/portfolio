@@ -12,30 +12,30 @@ function App() {
     <div className="scroll-smooth">
       <Header />
 
-      <section id="home" className="h-screen scroll-mt-16 flex items-center justify-center">
+      <section id="home" className="min-h-screen flex items-center justify-center  ">
         <Home />
       </section>
 
-      <section id="about" className="h-screen scroll-mt-16">
+      <section id="about" className="min-h-screen flex items-center justify-center ">
         <About />
       </section>
 
-      <section id="skills" className="h-screen scroll-mt-32">
+      <section id="skills" className="min-h-screen flex items-center justify-center relative scroll-mt-16">
         <Skills />
       </section>
 
-      <section id="projects" className="h-screen scroll-mt-16">
-        <Projects /> 
+      <section id="projects" className="min-h-screen flex items-center justify-center relative scroll-mt-16">
+        <Projects />
       </section>
 
-      <section id="contact" className="h-screen scroll-mt-16">
+      <section id="contact" className="min-h-screen flex items-center justify-center relative">
         <Contact />
       </section>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }
 
-
 export default App;
+

@@ -8,9 +8,11 @@ module.exports = {
       fontFamily: {
               montserrat: ['Montserrat', 'sans-serif'],
               lexend: ['Lexend', 'sans-serif'],
+              mogra: ['Mogra', 'system-ui'],
+              bagel: ['Bagel Fat One', 'system-ui']
           },
       animation: {
-        'fade-in': 'fadeIn 1s ease-out forwards',
+        'slow-spin': 'spin 8s linear infinite'
       },
       keyframes: {
         fadeIn: {

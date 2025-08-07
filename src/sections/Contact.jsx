@@ -1,24 +1,40 @@
 import React from 'react';
+import { IoMdFlower } from "react-icons/io";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="h-screen scroll-mt-16 pt-16 flex flex-col items-center justify-center text-center px-4"
-    >
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-lexend">
-        Get in Touch
-      </h2>
-      <p className="text-lg md:text-xl text-gray-600 max-w-xl mb-8 font-montserrat">
-        Feel free to reach out if you’d like to collaborate, have a question, or just want to connect.
-      </p>
+    <div className="flex flex-col items-center text-center px-4 ">
+        <IoMdFlower className="hidden lg:block absolute  lg:top-[10%] lg:left-[15%] text-5xl md:text-8xl lg:text-9xl text-pink-800 animate-slow-spin" />
+        <IoMdFlower className="hidden lg:block absolute bottom-[21%] right-[17%] text-5xl md:text-8xl lg:text-7xl text-pink-800 animate-slow-spin" />
 
-      <a
-        href="mailto:your.email@example.com"
-        className="text-xl font-semibold text-blue-600 hover:text-blue-800 transition-colors underline underline-offset-4"
-      >
-        your.email@example.com
-      </a>
-    </section>
+      <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-yellow-600 font-mogra mb-8">
+        Get in Touch!
+      </h2>
+
+      <div className="flex flex-col gap-6 text-pink-800">
+        <div className="flex items-center justify-center hover:text-pink-700 gap-4">
+          <div className="text-3xl">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </div>
+          <a
+            href="https://www.linkedin.com/in/ingrid-eliasson-262bba21a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl font-semibold underline underline-offset-4"
+          >
+            <span>LinkedIn</span>
+          </a>
+        </div>
+
+        <a
+          href="mailto:in.eliasson@gmail.com"
+          className="text-xl font-semibold underline underline-offset-4 hover:text-pink-700"
+        >
+          in.eliasson@gmail.com
+        </a>
+      </div>
+    </div>
   );
 }

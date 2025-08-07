@@ -10,17 +10,17 @@ export default function ProjectCard({
   liveLink,
 }) {
   return (
-    <div className="bg-white/10 rounded-2xl shadow-lg overflow-hidden flex flex-col w-full max-w-md transition hover:scale-105 hover:shadow-2xl duration-300">
-      <img
+    <div className="bg-yellow-600 rounded-2xl shadow-lg overflow-hidden flex flex-col w-full max-w-md  hover:scale-105 duration-300 border-4 border-yellow-600 ">
+      <img  
         src={image}
         alt={title}
-        className="h-56 w-full object-cover"
+        className="h-60 w-full object-cover object-top"
       />
 
-      <div className="p-6 flex flex-col gap-4 ">
-        <h2 className="text-2xl font-bold">{title}</h2>
+      <div className="p-6 flex flex-col gap-4 font-montserrat text-yellow-950 ">
+        <h2 className="text-2xl font-bold ">{title}</h2>
 
-        <p className="text-sm text-gray-300">{description}</p>
+        <p className="text-sm text-yellow-950">{description}</p>
 
         <div className="mt-4 flex gap-4 items-center justify-center">
 
@@ -28,7 +28,7 @@ export default function ProjectCard({
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className=" flex items-center gap-2 hover:text-blue-300"
+            className=" flex items-center gap-2 text-yellow-950 hover:text-pink-900"
           >
             <FaGithub /> GitHub
           </a>
@@ -38,7 +38,7 @@ export default function ProjectCard({
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-blue-300"
+              className="flex items-center gap-2 text-yellow-950 hover:text-pink-900"
             > 
               <FaEye /> Preview
             </a>
